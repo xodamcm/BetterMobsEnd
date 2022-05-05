@@ -19,7 +19,7 @@ class Attributes {
 
 	public function isHostile(string $name) : bool {
 		return in_array($name, [
-			"Blaze", "CaveSpider", "Creeper", "Guardian", "Husk", "Skeleton", "Slime", "Spider", "Stray", "Witch", "Wolf", "Zombie", "ZombieVillager", "Evoker", "Vindicator", "ElderGuardian"
+			"Blaze", "Endermite", "Enderman", "Creeper", "Guardian", "Husk", "Skeleton", "Slime", "Spider", "Stray", "Strider", "Wolf", "Zombie", "ZombieVillager", "Evoker", "Vindicator", "ElderGuardian"
 		]);
 	}
 	
