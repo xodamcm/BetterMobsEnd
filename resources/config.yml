@@ -13,9 +13,9 @@ nospawn:
 - nether
 - nether2
 - nether3
-- end
-- end2
-- end3
+- world
+- world2
+- overworld
 # quantity of mobs to spawn of each type (higher numbers will use a lot more system resources)
 # 3 mobs spawn by default per type, add a mob below to change the spawn quantity, use 0 for none
 # available mobs are:
@@ -59,7 +59,7 @@ Goat: 3
 Axolotl: 5
 Endermite: 3
 Enderman: 3
-EnderDragon: 4
+EnderDragon: 1
 Shulker: 2
 Blaze: 6
 Ghast: 4
