@@ -1,4 +1,4 @@
-#BetterMobsEnd
+BetterMobsEnd
 BetterMobs is a plugin Remixed, by MadoxMC, the original plugin is maked by tgwaste. MadoxMC Just Edited This plugin to Make 3 Compatible Plugins to add Mobs on your Overworld Worlds, NetherWorlds & EndWorlds, MadoxMC Idea. easy to use, you must go on config and choose the world you wont mobs do not spawn, exemple, on your BetterMobsNether data, you must choose your end & overworld worlds, so end mobs can just spawn on end, they can’t spawn in any other world, do this for BetterMobsOverworld and BetterMobsNether
 
 This plugin fix: bad spawn, of no vanilla spawn mobs of original plugin Mobs
@@ -92,4 +92,15 @@ poggit-bot Poggit Bot
 Languages
 PHP
 100.0%
-© 2022
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
