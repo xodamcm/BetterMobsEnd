@@ -1,0 +1,72 @@
+---
+# true / false
+spawnmobs: true
+# show spawn/despawn messages to the console
+spawnmsgs: false
+# show name tags and health percent if percent is less than 100
+# damagetags: false
+# regain this much health over time when idle
+# setting to 0 disables
+regainhealth: 1
+# mobs will not spawn in any worldname containing one of these strings
+nospawn:
+- nether
+- nether2
+- nether3
+- end
+- end2
+- end3
+# quantity of mobs to spawn of each type (higher numbers will use a lot more system resources)
+# 3 mobs spawn by default per type, add a mob below to change the spawn quantity, use 0 for none
+# available mobs are:
+# Bat Blaze Cat CaveSpider Chicken Cod Cow Creeper Dolphin Donkey ElderGuardian Enderman Ghast
+# Guardian Horse Husk IronGolem Llama MagmaCube Mooshroom Ocelot Parrot Phantom Pig PolarBear
+# PufferFish Rabbit Salmon Sheep Silverfish Skeleton SkeletonHorse Slime Spider Squid Stray
+# TropicalFish Villager Witch Wolf Zombie ZombieVillager
+#do not remove this entities, because they are all Enderman, that is for fix big group enderman spawning of betterendmobs v1
+Bat: 3
+Horse: 2
+Llama: 3
+Ocelot: 7
+Parrot: 2
+Phantom: 2
+Pig: 4
+Cat: 3
+Chicken: 4
+Creeper: 3
+Donkey: 6
+Enderman: 3
+PolarBear: 2
+PufferFish: 2
+Rabbit: 4
+ZombieVillager: 2
+Zombie: 4
+Skeleton: 4
+Witch: 3
+Wolf: 2
+Spider: 3
+Sheep: 4
+Salmon: 3
+Slime: 4
+Squid: 3
+Cow: 4
+Witch: 4
+Fox: 5
+Bee: 6
+Evoker: 3
+Vindicator: 2
+Goat: 3
+Axolotl: 5
+Endermite: 3
+Enderman: 3
+EnderDragon: 4
+Shulker: 2
+Blaze: 6
+Ghast: 4
+Hoglin: 5
+Piglin: 3
+ZombiePigman: 5
+Strider: 3
+WitherSkeleton: 6
+MagmaCube: 3
+...

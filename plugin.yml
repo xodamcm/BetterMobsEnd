@@ -1,0 +1,23 @@
+name: BetterMobsEnd
+version: 2
+main: tgwaste\EndMobs\Main
+api: 4.0.0
+author: tgwaste
+editor: MadoxMC
+commands:
+  killendmobs:
+    usage: "/killendmobs"
+    description: "Kill all End Mobs"
+    permission: mobsend.operator
+  listendmobs:
+    usage: "/listendmobs"
+    description: "List all End Mobs"
+    permission: mobsend.operator
+  summonend:
+    usage: "/summonend <type> [quantity]"
+    description: "Summon a End Mob"
+    permission: mobsend.operator
+permissions:
+  mobsend.operator:
+    description: allow using end mob commands
+    default: op
