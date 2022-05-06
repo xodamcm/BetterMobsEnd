@@ -54,17 +54,17 @@ class Main extends PluginBase implements Listener {
 			return true;
 		}
 
-		if ($label === "listmobs") {
+		if ($label === "listendmobs") {
 			$this->toolsobj->listMobs($sender);
 			return true;
 		}
 
-		if ($label === "killmobs") {
+		if ($label === "killendmobs") {
 			$this->toolsobj->killMobs($sender);
 			return true;
 		}
 
-		if ($label === "summon") {
+		if ($label === "summonend") {
 			if (!$sender instanceof Player) {
 				$sender->sendMessage("§cThat command cannot be done from the console§r");
 				return true;

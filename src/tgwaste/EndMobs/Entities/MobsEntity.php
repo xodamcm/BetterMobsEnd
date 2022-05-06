@@ -118,8 +118,8 @@ class MobsEntity extends Living {
 			$this->timer = 20;
 			$this->setMovementSpeed(1.00);
 		} else {
-			$this->timer = 0;
-			$this->setMovementSpeed(2.00);
+			$this->timer = 20;
+			$this->setMovementSpeed(1.00);
 		}
 		//$this->damageTag();
 		parent::knockBack($x, $z, $force);
@@ -133,11 +133,11 @@ class MobsEntity extends Living {
 	public function mortalEnemy() : string {
 	     return (new Attributes)->getMortalEnemy($this->getName());
 	}
-
+	
 	public function catchesFire() : bool {
 		return (new Attributes)->canCatchFire($this->getName());
 	}
-
+	
 	public function isFlying() : bool {
 		return (new Attributes)->isFlying($this->getName());
 	}
@@ -150,24 +150,6 @@ class MobsEntity extends Living {
 		return (new Attributes)->isHostile($this->getName());
 	}
 
-	public function isEnd() : bool {
-		return (new Attributes)->isEndMob($this->getName());
-	}
-
-	/**public function isSnow() : bool {
-		return (new Attributes)->isSnowMob($this->getName());
-	}*/
-
-	/**public function isSwimming() : bool {
-		$swim = (new Attributes)->isSwimming($this->getName());
-		$ticks = $this->getAirSupplyTicks();
-		$maxticks = $this->getMaxAirSupplyTicks();
-		if ($swim == true and $this->isBreathing() == false and $ticks < ($maxticks/2)) {
-			$this->setAirSupplyTicks($maxticks);
-		}
-		return $swim;
-	}
-*/
 	public function fall(float $fallDistance) : void {
 	}
 }

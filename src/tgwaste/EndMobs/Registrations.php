@@ -9,63 +9,64 @@ use pocketmine\entity\EntityDataHelper;
 use pocketmine\entity\EntityFactory;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\world\World;
-use tgwaste\EndMobs\Entities\Bat;
-use tgwaste\EndMobs\Entities\Vindicator;
-use tgwaste\EndMobs\Entities\Evoker;
-use tgwaste\EndMobs\Entities\Axolotl;
+use tgwaste\EndMobs\Entities\MobsEntity;
+use tgwaste\EndMobs\Entities\Enderman1;
+use tgwaste\EndMobs\Entities\Enderman2;
+use tgwaste\EndMobs\Entities\Enderman3;
+use tgwaste\EndMobs\Entities\Enderman4;
+use tgwaste\EndMobs\Entities\Enderman5;
+use tgwaste\EndMobs\Entities\Enderman6;
+use tgwaste\EndMobs\Entities\Enderman7;
+use tgwaste\EndMobs\Entities\Enderman8;
+use tgwaste\EndMobs\Entities\Enderman9;
+use tgwaste\EndMobs\Entities\Enderman10;
+use tgwaste\EndMobs\Entities\Enderman11;
+use tgwaste\EndMobs\Entities\Enderman12;
+use tgwaste\EndMobs\Entities\Enderman13;
+use tgwaste\EndMobs\Entities\Enderman14;
+use tgwaste\EndMobs\Entities\Enderman15;
+use tgwaste\EndMobs\Entities\Enderman16;
+use tgwaste\EndMobs\Entities\Enderman17;
+use tgwaste\EndMobs\Entities\Enderman18;
+use tgwaste\EndMobs\Entities\Enderman19;
+use tgwaste\EndMobs\Entities\Enderman20;
+use tgwaste\EndMobs\Entities\Enderman21;
+use tgwaste\EndMobs\Entities\Enderman22;
+use tgwaste\EndMobs\Entities\Enderman23;
+use tgwaste\EndMobs\Entities\Enderman24;
+use tgwaste\EndMobs\Entities\Enderman25;
+use tgwaste\EndMobs\Entities\Enderman26;
+use tgwaste\EndMobs\Entities\Enderman27;
+use tgwaste\EndMobs\Entities\Enderman28;
+use tgwaste\EndMobs\Entities\Enderman29;
+use tgwaste\EndMobs\Entities\Enderman30;
+use tgwaste\EndMobs\Entities\Enderman31;
+use tgwaste\EndMobs\Entities\Enderman32;
+use tgwaste\EndMobs\Entities\Enderman33;
+use tgwaste\EndMobs\Entities\Enderman34;
+use tgwaste\EndMobs\Entities\Enderman35;
+use tgwaste\EndMobs\Entities\Enderman36;
+use tgwaste\EndMobs\Entities\Enderman37;
+use tgwaste\EndMobs\Entities\Enderman38;
+use tgwaste\EndMobs\Entities\Enderman39;
+use tgwaste\EndMobs\Entities\Enderman40;
+use tgwaste\EndMobs\Entities\Enderman41;
+use tgwaste\EndMobs\Entities\Enderman42;
+use tgwaste\EndMobs\Entities\Enderman43;
+use tgwaste\EndMobs\Entities\Enderman44;
+use tgwaste\EndMobs\Entities\Enderman45;
+use tgwaste\EndMobs\Entities\Enderman46;
+use tgwaste\EndMobs\Entities\Enderman47;
+use tgwaste\EndMobs\Entities\Enderman48;
+use tgwaste\EndMobs\Entities\Enderman49;
+use tgwaste\EndMobs\Entities\Enderman50;
+use tgwaste\EndMobs\Entities\Enderman51;
+use tgwaste\EndMobs\Entities\Enderman52;
+use tgwaste\EndMobs\Entities\Enderman53;
 use tgwaste\EndMobs\Entities\Endermite;
-use tgwaste\EndMobs\Entities\Bee;
-use tgwaste\EndMobs\Entities\Fox;
-use tgwaste\EndMobs\Entities\Cat;
-use tgwaste\EndMobs\Entities\CaveSpider;
-use tgwaste\EndMobs\Entities\Chicken;
-use tgwaste\EndMobs\Entities\Cod;
-use tgwaste\EndMobs\Entities\Cow;
-use tgwaste\EndMobs\Entities\Creeper;
-use tgwaste\EndMobs\Entities\Dolphin;
-use tgwaste\EndMobs\Entities\Donkey;
-use tgwaste\EndMobs\Entities\ElderGuardian;
+use tgwaste\EndMobs\Entities\Shulker;
 use tgwaste\EndMobs\Entities\Enderman;
 use tgwaste\EndMobs\Entities\EnderDragon;
-use tgwaste\EndMobs\Entities\Guardian;
-use tgwaste\EndMobs\Entities\Horse;
-use tgwaste\EndMobs\Entities\Husk;
-use tgwaste\EndMobs\Entities\Goat;
-use tgwaste\EndMobs\Entities\IronGolem;
-use tgwaste\EndMobs\Entities\Llama;
-use tgwaste\EndMobs\Entities\Shulker;
-use tgwaste\EndMobs\Entities\MobsEntity;
-use tgwaste\EndMobs\Entities\Mooshroom;
-use tgwaste\EndMobs\Entities\Ocelot;
-use tgwaste\EndMobs\Entities\Parrot;
-use tgwaste\EndMobs\Entities\Phantom;
-use tgwaste\EndMobs\Entities\Pig;
-use tgwaste\EndMobs\Entities\PolarBear;
-use tgwaste\EndMobs\Entities\PufferFish;
-use tgwaste\EndMobs\Entities\Rabbit;
-use tgwaste\EndMobs\Entities\Salmon;
-use tgwaste\EndMobs\Entities\Sheep;
-use tgwaste\EndMobs\Entities\Silverfish;
-use tgwaste\EndMobs\Entities\Skeleton;
-use tgwaste\EndMobs\Entities\SkeletonHorse;
-use tgwaste\EndMobs\Entities\Slime;
-use tgwaste\EndMobs\Entities\Spider;
-use tgwaste\EndMobs\Entities\Squid;
-use tgwaste\EndMobs\Entities\Stray;
-use tgwaste\EndMobs\Entities\TropicalFish;
-use tgwaste\EndMobs\Entities\Villager;
-use tgwaste\EndMobs\Entities\Witch;
-use tgwaste\EndMobs\Entities\Wolf;
-use tgwaste\EndMobs\Entities\Zombie;
-use tgwaste\EndMobs\Entities\ZombieVillager;
-use tgwaste\EndMobs\Entities\Blaze;
-use tgwaste\EndMobs\Entities\Ghast;
-use tgwaste\EndMobs\Entities\Hoglin;
-use tgwaste\EndMobs\Entities\Piglin;
-use tgwaste\EndMobs\Entities\MagmaCube;
-use tgwaste\EndMobs\Entities\WitherSkeleton;
-use tgwaste\EndMobs\Entities\ZombiePigman;
-use tgwaste\EndMobs\Entities\Strider;
 
 class Registrations {
 	public function registerEntities() {
@@ -82,62 +83,61 @@ class Registrations {
 
 	public function getClasses() : array {
 		return [
-			"Bat" => Bat::class,
-			"Strider" => Strider::class,
-			"Ghast" => Ghast::class,
-			"Blaze" => Blaze::class,
-			"MagmaCube" => MagmaCube::class,
-			"Piglin" => Piglin::class,
-			"Hoglin" => Hoglin::class,
-			"ZombiePigman" => ZombiePigman::class,
-			"WitherSkeleton" => WitherSkeleton::class,
-			"Axolotl" => Axolotl::class,
-			"Bee" => Bee::class,
-			"Endermite" => Endermite::class,
-			"Cat" => Cat::class,
-			"Goat" => Goat::class,
-			"CaveSpider" => CaveSpider::class,
-			"Chicken" => Chicken::class,
-			"Cod" => Cod::class,
-			"Cow" => Cow::class,
-			"Creeper" => Creeper::class,
-			"Dolphin" => Dolphin::class,
-			"Donkey" => Donkey::class,
-			"Vindicator" => Vindicator::class,
-			"Evoker" => Evoker::class,
-			"Fox" => Fox::class,
-			"ElderGuardian" => ElderGuardian::class,
-			"Enderman" => Enderman::class,
-			"EnderDragon" => EnderDragon::class,
-			"Guardian" => Guardian::class,
-			"Horse" => Horse::class,
-			"Husk" => Husk::class,
-			"IronGolem" => IronGolem::class,
-			"Llama" => Llama::class,
+			"Enderman1" => Enderman1::class,
+			"Enderman2" => Enderman2::class,
+			"Enderman3" => Enderman3::class,
+			"Enderman4" => Enderman4::class,
+			"Enderman5" => Enderman5::class,
+			"Enderman6" => Enderman6::class,
+			"Enderman7" => Enderman7::class,
+			"Enderman8" => Enderman8::class,
+			"Enderman9" => Enderman9::class,
+			"Enderman10" => Enderman10::class,
+			"Enderman11" => Enderman11::class,
+			"Enderman12" => Enderman12::class,
+			"Enderman13" => Enderman13::class,
+			"Enderman14" => Enderman14::class,
+			"Enderman15" => Enderman15::class,
+			"Enderman16" => Enderman16::class,
+			"Enderman17" => Enderman17::class,
+			"Enderman18" => Enderman18::class,
+			"Enderman19" => Enderman19::class,
+			"Enderman20" => Enderman20::class,
+			"Enderman21" => Enderman21::class,
+			"Enderman22" => Enderman22::class,
+			"Enderman23" => Enderman23::class,
+			"Enderman24" => Enderman24::class,
+			"Enderman25" => Enderman25::class,
+			"Enderman26" => Enderman26::class,
+			"Enderman27" => Enderman27::class,
+			"Enderman28" => Enderman28::class,
+			"Enderman29" => Enderman29::class,
+			"Enderman30" => Enderman30::class,
+			"Enderman31" => Enderman31::class,
+			"Enderman32" => Enderman32::class,
+			"Enderman33" => Enderman33::class,
+			"Enderman34" => Enderman34::class,
+			"Enderman35" => Enderman35::class,
+			"Enderman36" => Enderman36::class,
+			"Enderman37" => Enderman37::class,
+			"Enderman38" => Enderman38::class,
+			"Enderman39" => Enderman39::class,
+			"Enderman40" => Enderman40::class,
+			"Enderman41" => Enderman41::class,
+			"Enderman42" => Enderman43::class,
+			"Enderman44" => Enderman44::class,
+			"Enderman45" => Enderman45::class,
+			"Enderman46" => Enderman46::class,
+			"Enderman47" => Enderman47::class,
+			"Enderman48" => Enderman48::class,
+			"Enderman49" => Enderman49::class,
+			"Enderman50" => Enderman51::class,
+			"Enderman52" => Enderman52::class,
+			"Enderman53" => Enderman53::class,			
 			"Shulker" => Shulker::class,
-			"Mooshroom" => Mooshroom::class,
-			"Ocelot" => Ocelot::class,
-			"Parrot" => Parrot::class,
-			"Phantom" => Phantom::class,
-			"Pig" => Pig::class,
-			"PolarBear" => PolarBear::class,
-			"PufferFish" => PufferFish::class,
-			"Rabbit" => Rabbit::class,
-			"Salmon" => Salmon::class,
-			"Sheep" => Sheep::class,
-			"Silverfish" => Silverfish::class,
-			"Skeleton" => Skeleton::class,
-			"SkeletonHorse" => SkeletonHorse::class,
-			"Slime" => Slime::class,
-			"Spider" => Spider::class,
-			"Squid" => Squid::class,
-			"Stray" => Stray::class,
-			"TropicalFish" => TropicalFish::class,
-			"Villager" => Villager::class,
-			"Witch" => Witch::class,
-			"Wolf" => Wolf::class,
-			"Zombie" => Zombie::class,
-			"ZombieVillager" => ZombieVillager::class
+			"Endermite" => Endermite::class,
+			"Enderman" => Enderman::class,
+			"EnderDragon" => EnderDragon::class
 		];
 	}
 }
