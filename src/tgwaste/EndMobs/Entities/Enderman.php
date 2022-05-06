@@ -28,14 +28,9 @@ class Enderman extends MobsEntity {
         $cause = $this->lastDamageCause;
         if($cause instanceof EntityDamageByEntityEvent){
             $dmg = $cause->getDamager();
-            if($dmg instanceof Player){
-               
-                // $looting = $dmg->getInventory()->getItemInHand()->getEnchantment(Enchantment::LOOTING);
-                // if($looting !== null){
-                    // $lootingL = $looting->getLevel();
-                // }else{
+            if($dmg instanceof Player){          
+
                     $lootingL = 1;
-            // }
             }
         }
         return [
