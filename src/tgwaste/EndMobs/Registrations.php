@@ -135,7 +135,7 @@ class Registrations {
 			"Enderman50" => Enderman51::class,
 			"Enderman52" => Enderman52::class,
 			"Enderman53" => Enderman53::class,
-			"Enderman53" => Enderman100::class,			
+			"Enderman100" => Enderman100::class,			
 			"Shulker" => Shulker::class,
 			"Endermite" => Endermite::class,
 			"Enderman" => Enderman::class,
