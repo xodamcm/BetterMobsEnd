@@ -13,7 +13,6 @@ use pocketmine\item\enchantment\Enchantment;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use function mt_rand;
 use pocketmine\entity\EntitySizeInfo;
-use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\item\VanillaItems;
 class Enderman52 extends MobsEntity {
 	const TYPE_ID = EntityLegacyIds::ENDERMAN;
