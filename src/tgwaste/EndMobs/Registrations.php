@@ -63,6 +63,7 @@ use tgwaste\EndMobs\Entities\Enderman50;
 use tgwaste\EndMobs\Entities\Enderman51;
 use tgwaste\EndMobs\Entities\Enderman52;
 use tgwaste\EndMobs\Entities\Enderman53;
+use tgwaste\EndMobs\Entities\Enderman100;
 use tgwaste\EndMobs\Entities\Endermite;
 use tgwaste\EndMobs\Entities\Shulker;
 use tgwaste\EndMobs\Entities\Enderman;
@@ -133,7 +134,8 @@ class Registrations {
 			"Enderman49" => Enderman49::class,
 			"Enderman50" => Enderman51::class,
 			"Enderman52" => Enderman52::class,
-			"Enderman53" => Enderman53::class,			
+			"Enderman53" => Enderman53::class,
+			"Enderman53" => Enderman100::class,			
 			"Shulker" => Shulker::class,
 			"Endermite" => Endermite::class,
 			"Enderman" => Enderman::class,
