@@ -8,10 +8,12 @@ use pocketmine\data\bedrock\EntityLegacyIds;
 use pocketmine\entity\Living;
 use pocketmine\item\Item;
 use pocketmine\player\Player;
-use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\item\enchantment\Enchantment;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use function mt_rand;
+use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataCollection;
+use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataProperties;
+use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\entity\EntitySizeInfo;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\item\ItemFactory;
@@ -22,6 +24,7 @@ class Shulker extends MobsEntity {
     public function initEntity(CompoundTag $nbt) : void{
         $this->setMaxHealth(20);
 	 $this->setMovementSpeed(1.2);
+        $this->setVariant(mt_rand(0, 3));
         parent::initEntity($nbt);
     }
     /**public function getDrops(): array{
@@ -49,4 +52,16 @@ class Shulker extends MobsEntity {
     {
         return 5 + mt_rand(1, 3);
     }
+    public function setVariant(int $variant = 0): void {
+		if($variant > 2 && $variant < 0){
+			$variant = 0;
+		}
+		$this->variant = $variant;
+		$this->networkPropertiesDirty = true;
+	} 
+	
+    protected function syncNetworkData(EntityMetadataCollection $properties) : void{
+		parent::syncNetworkData($properties);
+		$properties->setInt(EntityMetadataProperties::VARIANT, $this->variant);
+	}   
 }
